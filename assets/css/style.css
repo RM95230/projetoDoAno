@@ -1,117 +1,149 @@
-*{
-    margin: 0;
-    margin-bottom: 0;
-    padding: 0;
-    gap: 0;
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 0;
 }
 
-html{
-    scroll-behavior: unset;
+html {
+  scroll-behavior: unset;
 }
 
 body {
-    background-color: #1A1A1A;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  background-color: #1a1a1a;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 header {
-    background-color: #A52A2A;
-    padding: 5px 20px;
-    background-size: cover;
-    background-position: center;
-    font-size: 1.2rem;
-} 
-
+  background-color: #a52a2a;
+  padding: 5px 20px;
+  background-size: cover;
+  background-position: center;
+  font-size: 1.2rem;
+}
 
 header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 #features {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    place-items: center;
-    padding: 20px;
-    background-color: #d0cab3;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  place-items: center;
+  padding: 20px;
+  background-color: #d0cab3;
 }
 
 .feature {
-    color: white;
-    background-color: #A52A2A;
-    margin: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  color: white;
+  background-color: #a52a2a;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 }
 
-.imageFeature{
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.imageFeature {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 6px;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 }
 
-.alignMain{
-    display: flex;
-    align-items: center;
-    padding: 4rem;
-    height: 100vh;
+.alignMain {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
 }
 
-.centerImageHero{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-left: 16rem;
+.centerImageHero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 16rem;
 }
 
-.imageHero{
-    height: auto;
-    padding: 18px;
-    width: 36rem;
-    animation: spin;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.imageHero {
+  height: auto;
+  padding: 18px;
+  width: 36rem;
+  animation: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .icon-logo {
-    margin-right: 20px;
-    height: 30px;
-    color: rgb(0, 0, 0);
+  margin-right: 20px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#secao-orcamento {
+  height: 100vh;
+  padding: 3rem;
+  background-image: url(https://images.unsplash.com/photo-1534177616072-ef7dc120449d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#secao-orcamento h2 {
+  font-family: var(--font-title);
+}
+
+#secao-orcamento form {
+  display: grid;
+
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.linha {
+  grid-column: 1 / 3;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"] {
+  accent-color: #a52a2a;
 }
