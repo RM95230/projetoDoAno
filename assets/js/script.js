@@ -16,7 +16,13 @@ function calcular() {
 
   if (prototipo_sim) valor += 500;
 
-  if (jscrianca) valor += 10000;
+  if (jscrianca) {
+    valor += 10000;
+    let localmensagem = document.getElementById("vsf");
+    let mensagem = document.createElement("div");
+    mensagem.innerHTML = "<p>SE FUDEU</p>";
+    localmensagem.appendChild(mensagem);
+  }
 
   document.querySelector("#mensagem-valor").innerText = `R$ ${valor.toFixed(
     2
@@ -24,3 +30,5 @@ function calcular() {
 
   console.log(convidados);
 }
+
+window.onload = calcular;
